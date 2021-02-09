@@ -1,0 +1,13 @@
+@EndUserText.label: 'table sd'
+define service ZYB_SD_TABLE {
+  expose ZYB_C_COMPONANTS as components;
+  expose ZYB_TABLE_CUST;
+  expose ZYB_APLO_CUST;
+  expose ZYB_DOMAIN_CUST;
+  expose ZYB_DDLS_CUSTOM;
+  expose ZYB_MSAG_CUST;
+  expose ZYB_SRVD_CUST;
+  expose ZYB_DTEL_CUST;
+  expose ZYB_SRVB_CUST;
+  expose ZYB_I_OBJECT_TEXT;
+}
