@@ -11,7 +11,9 @@ ENDCLASS.
 
 
 
-CLASS zyb_cl_domain_cust IMPLEMENTATION.
+CLASS ZYB_CL_DOMAIN_CUST IMPLEMENTATION.
+
+
   METHOD if_rap_query_provider~select.
     DATA: ls_doma TYPE ZYB_DOMAIN_CUST,
           lt_doma TYPE TABLE OF ZYB_DOMAIN_CUST.
@@ -86,5 +88,4 @@ CLASS zyb_cl_domain_cust IMPLEMENTATION.
       io_response->set_total_number_of_records( lv_doma_count ).
     ENDIF.
   ENDMETHOD.
-
 ENDCLASS.

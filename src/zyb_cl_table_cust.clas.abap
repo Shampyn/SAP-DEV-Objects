@@ -11,7 +11,9 @@ ENDCLASS.
 
 
 
-CLASS zyb_cl_table_cust IMPLEMENTATION.
+CLASS ZYB_CL_TABLE_CUST IMPLEMENTATION.
+
+
   METHOD if_rap_query_provider~select.
 
     DATA: ls_tabl TYPE zyb_table_cust,
@@ -135,5 +137,4 @@ CLASS zyb_cl_table_cust IMPLEMENTATION.
     ENDIF.
 
   ENDMETHOD.
-
 ENDCLASS.

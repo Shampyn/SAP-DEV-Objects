@@ -11,7 +11,9 @@ ENDCLASS.
 
 
 
-CLASS zyb_cl_ddls_custom IMPLEMENTATION.
+CLASS ZYB_CL_DDLS_CUSTOM IMPLEMENTATION.
+
+
   METHOD if_rap_query_provider~select.
     DATA: ls_ddls TYPE zyb_ddls_custom,
           lt_ddls TYPE TABLE OF zyb_ddls_custom.
@@ -81,5 +83,4 @@ CLASS zyb_cl_ddls_custom IMPLEMENTATION.
       io_response->set_total_number_of_records( lv_ddls_count ).
     ENDIF.
   ENDMETHOD.
-
 ENDCLASS.

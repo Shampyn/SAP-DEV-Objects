@@ -11,7 +11,9 @@ ENDCLASS.
 
 
 
-CLASS zyb_cl_aplo_cust IMPLEMENTATION.
+CLASS ZYB_CL_APLO_CUST IMPLEMENTATION.
+
+
   METHOD if_rap_query_provider~select.
     DATA: ls_subobj TYPE zyb_aplo_cust,
           lt_subobj TYPE TABLE OF zyb_aplo_cust.
@@ -93,5 +95,4 @@ CLASS zyb_cl_aplo_cust IMPLEMENTATION.
       io_response->set_total_number_of_records( lv_aplo_count ).
     ENDIF.
   ENDMETHOD.
-
 ENDCLASS.

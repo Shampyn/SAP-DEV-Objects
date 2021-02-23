@@ -11,7 +11,9 @@ ENDCLASS.
 
 
 
-CLASS zyb_cl_virtual IMPLEMENTATION.
+CLASS ZYB_CL_VIRTUAL IMPLEMENTATION.
+
+
   METHOD if_sadl_exit_calc_element_read~calculate.
     DATA lt_original_data TYPE STANDARD TABLE OF zyb_c_componants WITH DEFAULT KEY.
     lt_original_data = CORRESPONDING #( it_original_data ).
@@ -62,6 +64,7 @@ CLASS zyb_cl_virtual IMPLEMENTATION.
     ct_calculated_data = CORRESPONDING #(  lt_original_data ).
   ENDMETHOD.
 
+
   METHOD if_sadl_exit_calc_element_read~get_calculation_info.
 
     LOOP AT it_requested_calc_elements ASSIGNING FIELD-SYMBOL(<fs_calc_element>).
@@ -73,5 +76,4 @@ CLASS zyb_cl_virtual IMPLEMENTATION.
       ENDCASE.
     ENDLOOP.
   ENDMETHOD.
-
 ENDCLASS.
