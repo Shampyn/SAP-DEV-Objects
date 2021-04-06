@@ -11,9 +11,7 @@ ENDCLASS.
 
 
 
-CLASS ZYB_CL_SRVB__CUST IMPLEMENTATION.
-
-
+CLASS zyb_cl_srvb__cust IMPLEMENTATION.
   METHOD if_rap_query_provider~select.
     DATA: ls_srvb TYPE zyb_srvb_cust,
           lt_srvb TYPE TABLE OF zyb_srvb_cust.
@@ -82,4 +80,5 @@ CLASS ZYB_CL_SRVB__CUST IMPLEMENTATION.
       io_response->set_total_number_of_records( lv_srvd_count ).
     ENDIF.
   ENDMETHOD.
+
 ENDCLASS.

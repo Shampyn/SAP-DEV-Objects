@@ -1,0 +1,17 @@
+managed; // implementation in class zbp_yb_i_object_text unique;
+
+define behavior for ZYB_I_OBJECT_TEXT alias ObjectText
+persistent table zyb_d_object_txt
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+
+  field ( mandatory ) Objecttype, Objecttypetext;
+
+  mapping for zyb_d_object_txt corresponding;
+
+  create;
+  update;
+  delete;
+}

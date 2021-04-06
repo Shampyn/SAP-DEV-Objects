@@ -11,9 +11,7 @@ ENDCLASS.
 
 
 
-CLASS ZYB_CL_MSAG_CUST IMPLEMENTATION.
-
-
+CLASS zyb_cl_msag_cust IMPLEMENTATION.
   METHOD if_rap_query_provider~select.
     DATA: ls_msag TYPE zyb_msag_cust,
           lt_msag TYPE TABLE OF zyb_msag_cust.
@@ -83,4 +81,5 @@ CLASS ZYB_CL_MSAG_CUST IMPLEMENTATION.
       io_response->set_total_number_of_records( lv_msag_count ).
     ENDIF.
   ENDMETHOD.
+
 ENDCLASS.

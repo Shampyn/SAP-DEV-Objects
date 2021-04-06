@@ -11,9 +11,7 @@ ENDCLASS.
 
 
 
-CLASS ZYB_CL_DLET_CUST IMPLEMENTATION.
-
-
+CLASS zyb_cl_dlet_cust IMPLEMENTATION.
   METHOD if_rap_query_provider~select.
     DATA: ls_dtel TYPE zyb_dtel_cust,
           lt_dtel TYPE TABLE OF zyb_dtel_cust.
@@ -112,4 +110,5 @@ CLASS ZYB_CL_DLET_CUST IMPLEMENTATION.
       io_response->set_total_number_of_records( lv_dtel_count ).
     ENDIF.
   ENDMETHOD.
+
 ENDCLASS.
