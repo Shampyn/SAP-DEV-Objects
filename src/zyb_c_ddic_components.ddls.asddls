@@ -130,6 +130,16 @@ define root view entity ZYB_C_DDIC_Components
             defaultValue: ''            
           }
           ABAPObjectIsDeleted,
+          
+          @UI: { 
+            identification: [ { position: 70 } ],
+            selectionField: [ { position: 70 } ] 
+          }
+          @Consumption.filter: {
+            selectionType: #SINGLE,
+            defaultValue: ''            
+          }
+          HiddenFlag,
 
           @UI: { lineItem:       [ { position: 40, importance: #HIGH, label:'Package' }] ,
                  identification: [ { position: 40, label:'Package' } ],

@@ -35,6 +35,7 @@ define root view entity ZYB_I_COMPONENTS
       ABAPSoftwareComponent,
 
       _ObjectText.Objecttypetext,
+      _ObjectText.HiddenFlag,
       _User.UserDescription,
 
       case ABAPObjectType
@@ -90,3 +91,4 @@ define root view entity ZYB_I_COMPONENTS
       _ObjectText,
       _User
 }
+
